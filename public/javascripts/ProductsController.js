@@ -7,8 +7,6 @@ angular
     function ProductsController(){
       var self = this;
 
-
-
       this.productList = [
         {
           'name':'Kiffen',
@@ -59,7 +57,31 @@ angular
       this.bootPicker = function(boot){
         self.selected_product.pop();
         self.selected_product.push(boot);
+
+        self.bvConfigure(boot.externalId);
       }
 
+      this.bvConfigure = function(externalId){
+        console.log('bvconfigure is running. ProductId: ' + externalId);
+        $BV.configure('global', {
+          productId : externalId,
+          events: {
+            bvRender : function (data) {
+              console.log(data);
+            }
+          }
+        });
+        self.bvUI();
+      }
+
+      this.bvUI = function() {
+        console.log('bvUi is running');
+        $BV.ui( 'rr', 'show_reviews', {
+           doShowContent : function () {
+              // If the container is hidden (such as behind a tab), put code here to make it visible
+              //(open the tab).
+           }
+        });
+      }
 
     }

@@ -37,12 +37,12 @@ footer {
     margin: -5px; }
 
 .pdp .pdp-top img {
-  margin-top: 15px;
-  margin-left: 75px;
-  width: 60%; }
+  margin-top: 55px;
+  margin-left: -20px;
+  width: 85%; }
 
 .pdp .pdp-top .grey-bar {
-  height: 330px;
+  height: 480px;
   width: 10px;
   background-color: #fafafa;
   border-right: lightgrey solid 1px;
