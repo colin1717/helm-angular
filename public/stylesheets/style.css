@@ -59,7 +59,8 @@ footer {
 
 .pdp .pdp-top .tab-text {
   padding: 10px;
-  height: 190px; }
+  height: 190px;
+  overflow-y: scroll; }
 
 .pdp .pdp-bottom {
   text-align: center; }
