@@ -17,6 +17,9 @@ nav {
         cursor: pointer;
         display: inline-block; }
 
+.wrapper {
+  overflow: hidden; }
+
 .hero {
   margin: 2px 20px 0 20px; }
   .hero img {

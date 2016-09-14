@@ -71,17 +71,27 @@ angular
             }
           }
         });
-        self.bvUI();
+        self.bvUIrr();
       }
 
-      this.bvUI = function() {
-        console.log('bvUi is running');
+      this.bvUIrr = function() {
+        console.log('bvUi for rr is running');
         $BV.ui( 'rr', 'show_reviews', {
            doShowContent : function () {
               // If the container is hidden (such as behind a tab), put code here to make it visible
               //(open the tab).
            }
         });
+      }
+
+      this.bvUIqa = function() {
+        console.log('bvUI for qa is running');
+        $BV.ui( 'qa', 'show_questions', {
+          doShowContent : function () {
+             // If the container is hidden (such as behind a tab), put code here to make it visible
+             //(open the tab).
+          }
+       });
       }
 
     }
