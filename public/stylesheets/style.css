@@ -38,6 +38,8 @@ footer {
     margin-left: 50px; }
   .boots .product .product-info p {
     margin: -5px; }
+  .boots .product .product-info .inline-stars {
+    margin: 5px 0 0 -6px; }
 
 .pdp .pdp-top img {
   margin-top: 55px;

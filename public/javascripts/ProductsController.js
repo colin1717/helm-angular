@@ -94,4 +94,12 @@ angular
        });
       }
 
+      this.bvUIir = function() {
+        console.log('bvUI for inline ratings is running');
+        $BV.ui( 'rr', 'inline_ratings', {
+         productIds : ['kiffen', 'wells', 'ayers', 'muller-teak', 'muller-brown', 'phillips'],
+           containerPrefix : 'BVRRInlineRating'
+        });
+      }
+
     }

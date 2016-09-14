@@ -1,3 +1,4 @@
+{{ products.bvUIir() }}
 <div class="container">
   <div class="row boots">
 
@@ -7,7 +8,7 @@
       <div class="product-info">
         <p>{{ obj.name }}</p>
         <p>{{ obj.price | currency:"$" }}</p>
-        inline rating
+        <div class='inline-stars' id="BVRRInlineRating-{{ obj.externalId }}"></div>
       </div>
     </div>
   </div>
