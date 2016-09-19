@@ -22,13 +22,21 @@
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" ui-sref-active="active"><a ui-sref='.description' role="tab" data-toggle="tab">Description</a></li>
-            <li role="presentation" ui-sref-active='active'><a ui-sref='.ratings' aria-controls="profile" role="tab" data-toggle="tab">Ratings and Reviews</a></li>
-            <li role="presentation" ui-sref-active='active'><a ui-sref='.questions' aria-controls="profile" role="tab" data-toggle="tab">Q & A</a></li>
+            <li role="presentation" class='active' ng-click='products.descriptionTab()'><a role="tab" data-toggle="tab">Description</a></li>
+            <li ng-click='products.ratingsTab()' id='ratings-tab'><a role="tab" data-toggle="tab">Ratings and Reviews</a></li>
+            <li ng-click='products.questionsTab()' role="presentation"><a role="tab" data-toggle="tab">Q & A</a></li>
           </ul>
 
           <div class="tab-text">
-            <ui-view>
+            <div role="tabpanel" class="tab-pane active" id="description">
+              description
+            </div>
+            <div role="tabpanel" class="tab-pane hidden" id="ratings">
+              ratings and reviews
+            </div>
+            <div role="tabpanel" class="tab-pane hidden" id="questions">
+              questions and answers
+            </div>
           </div>
         </div>
 

@@ -102,4 +102,24 @@ angular
         });
       }
 
+      this.ratingsTab = function() {
+        $('#ratings').removeClass('hidden');
+        $('#ratings').show();
+        $('#description').hide();
+        $('#questions').hide();
+      }
+
+      this.descriptionTab = function() {
+        $('#description').show();
+        $('#ratings').hide();
+        $('#questions').hide();
+      }
+
+      this.questionsTab = function() {
+        $('#questions').removeClass('hidden');
+        $('#questions').show();
+        $('#description').hide();
+        $('#ratings').hide();
+      }
+
     }
