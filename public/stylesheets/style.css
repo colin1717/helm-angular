@@ -43,11 +43,11 @@ footer {
 
 .pdp .pdp-top img {
   margin-top: 55px;
-  margin-left: -20px;
-  width: 85%; }
+  margin-left: -200px;
+  width: 120%; }
 
 .pdp .pdp-top .grey-bar {
-  height: 480px;
+  height: 680px;
   width: 10px;
   background-color: #fafafa;
   border-right: lightgrey solid 1px;
@@ -64,7 +64,7 @@ footer {
 
 .pdp .pdp-top .tab-text {
   padding: 10px;
-  height: 190px;
+  height: 325px;
   overflow-y: scroll; }
 
 .pdp .pdp-bottom {
