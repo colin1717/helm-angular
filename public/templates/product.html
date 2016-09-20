@@ -22,24 +22,28 @@
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" id='description-tab' class='active' ng-click='products.descriptionTab()'><a role="tab" data-toggle="tab">Description</a></li>
-            <li ng-click='products.ratingsTab()' id='ratings-tab'><a role="tab" data-toggle="tab">Ratings and Reviews</a></li>
-            <li ng-click='products.questionsTab()' role="presentation"><a role="tab" data-toggle="tab">Q & A</a></li>
+            <li role="presentation" id='description-tab' class='active'>
+              <a data-target='#description' role="tab" data-toggle="tab">Description</a>
+            </li>
+            <li id='ratings-tab'>
+              <a data-target='#ratings' role="tab" data-toggle="tab">Ratings and Reviews</a>
+            </li>
+            <li role="presentation">
+              <a data-target='#questions' role="tab" data-toggle="tab">Q & A</a>
+            </li>
           </ul>
 
           <div class="tab-text">
-            <div role="tabpanel" class="tab-pane active" id="description">
-              <div class="tab-text">
-                <p>{{ products.selected_product[0].description }}</p>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="description">
+                {{ products.selected_product[0].description }}
               </div>
-            </div>
-            <div role="tabpanel" class="tab-pane hidden" id="ratings">
-              <div id="BVRRContainer"></div>
-
-            </div>
-            <div role="tabpanel" class="tab-pane hidden" id="questions">
-              <div id="BVQAContainer"></div>
-
+              <div role="tabpanel" class="tab-pane fade" id="ratings">
+                <div id="BVRRContainer"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="questions">
+                <div id="BVQAContainer"></div>
+              </div>
             </div>
           </div>
           {{ products.bvUIrr() }}
