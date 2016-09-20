@@ -29,13 +29,17 @@
 
           <div class="tab-text">
             <div role="tabpanel" class="tab-pane active" id="description">
-              description
+              <div class="tab-text">
+                <p>{{ products.selected_product[0].description }}</p>
+              </div>
             </div>
             <div role="tabpanel" class="tab-pane hidden" id="ratings">
-              ratings and reviews
+              <div id="BVRRContainer"></div>
+              {{ products.bvUIrr() }}
             </div>
             <div role="tabpanel" class="tab-pane hidden" id="questions">
-              questions and answers
+              <div id="BVQAContainer"></div>
+              {{ products.bvUIqa() }}
             </div>
           </div>
         </div>
