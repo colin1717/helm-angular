@@ -56,7 +56,7 @@
     <div class="pdp-bottom">
       <div class="col-xs-12">
         <h4>YOU MAY ALSO LIKE</h4>
-        <!-- {{ products.bvUIir() }} -->
+        {{ products.bvUIir() }}
       </div>
 
       <div class="col-xs-6 col-md-4" ng-repeat='obj in products.productList | limitTo:3'>
@@ -64,7 +64,7 @@
           <img src='{{ obj.image }}' alt="kiffen" />
           <div class="product-info">
             <p>{{ obj.name }}</p>
-            <!-- <div class='inline-stars' id="BVRRInlineRating-{{ obj.externalId }}"></div> -->
+            <div class='inline-stars' id="BVRRInlineRating-{{ obj.externalId }}"></div>
           </div>
         </div>
       </div>
