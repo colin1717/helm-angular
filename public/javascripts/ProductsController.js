@@ -112,17 +112,20 @@ angular
         $('#questions').hide();
       }
 
-      this.descriptionTab = function() {
-        $('#description').show();
-        $('#ratings').hide();
-        $('#questions').hide();
-      }
 
-      this.questionsTab = function() {
-        $('#questions').removeClass('hidden');
-        $('#questions').show();
-        $('#description').hide();
-        $('#ratings').hide();
-      }
+      //You can use these to switch tabs without bootstrap.js
+      
+      // this.descriptionTab = function() {
+      //   $('#description').show();
+      //   $('#ratings').hide();
+      //   $('#questions').hide();
+      // }
+      //
+      // this.questionsTab = function() {
+      //   $('#questions').removeClass('hidden');
+      //   $('#questions').show();
+      //   $('#description').hide();
+      //   $('#ratings').hide();
+      // }
 
     }
