@@ -80,7 +80,7 @@ angular
            doShowContent : function () {
               // If the container is hidden (such as behind a tab), put code here to make it visible
               //(open the tab).
-              
+              $('#ratings-tab a[data-target="#ratings"]').tab('show');
            }
         });
       }
@@ -91,6 +91,7 @@ angular
           doShowContent : function () {
              // If the container is hidden (such as behind a tab), put code here to make it visible
              //(open the tab).
+             
           }
        });
       }
